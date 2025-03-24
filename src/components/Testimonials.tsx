@@ -56,6 +56,7 @@ function Testimonials() {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
+                gap: "25px",
                 alignItems: "center",
                 marginBottom: "100px"
             }}
@@ -64,9 +65,9 @@ function Testimonials() {
             <Box
                 sx={{
                     width: "1200px",
-                    marginTop: "100px",
+                    // marginTop: "100px",
                     display: "flex",
-
+                    marginTop: "80px",
                 }}
             >
                 {/* component for heading */}
@@ -75,7 +76,8 @@ function Testimonials() {
                         width: "80%",
                         display: "flex",
                         flexDirection: "column",
-                        justifyContent: "flex-start"
+                        justifyContent: "flex-start",
+                        margin: "0px 20px"
                     }}
                 >
                     <Box
@@ -132,7 +134,7 @@ function Testimonials() {
                         </Typography>
                     </Box>
                 </Box>
-
+                {/* button conmponent */}
                 <Box
                     sx={{
                         width: "20%",
@@ -166,6 +168,10 @@ function Testimonials() {
                                 height: "350px",
                                 display: "flex !important",
                                 flexDirection: "row",
+                                margin: "0px 20px",
+                                paddingBottom: "40px",
+                                borderRadius: "10px !important",
+                                overflow: "hidden",
                             }}
                         >
                             {/* component for image */}
@@ -173,7 +179,7 @@ function Testimonials() {
                                 id = "image-container"
                                 sx={{
                                     width: "200px",
-                                    height: "100%"
+                                    height: "100%",
                                 }}
                             >
                                 <img
@@ -190,22 +196,57 @@ function Testimonials() {
                             <Box
                                 id = "content-container"
                                 sx={{
-                                    width: "350px"
+                                    width: "350px",
+                                    background: `-webkit-linear-gradient(-37deg, ${theme.palette.secondary.main} -40%, ${theme.palette.primary.main}) 100%`,
+                                    padding: "40px 10px 10px 10px",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "space-between",
+                                    alignItems: "flex-start",
+                                    borderRadius: "0 10px 10px 0",
                                 }}
                             >
-                                <Box>
-                                    <Typography>
+                                <Box
+                                    sx={{
+                                        
+                                    }}
+                                >
+                                    <Typography
+                                        sx={{
+                                            fontStyle: "figtree, sans-serif",
+                                            fontSize: "14px",
+                                            fontWeight: "600",
+                                            color: "rgb(255, 255, 255)",
+                                        }}
+                                    >
                                         {item.text}
                                     </Typography>
                                 </Box>
-                                <Box>
+                                <Box
+                                    sx={{
+                                        marginTop: "25px",
+                                    }}
+                                >
                                     <Box>
-                                        <Typography>
+                                        <Typography
+                                            sx={{
+                                                fontSize: "18px",
+                                                fontWeight: "600",
+                                                color: "rgb(255, 255, 255)"
+                                            }}
+                                        >
                                             {item.name}
                                         </Typography>
                                     </Box>
                                     <Box>
-                                        <Typography>
+                                        <Typography
+                                            sx={{
+                                                fontStyle: "figtree, sans-serif",
+                                                fontSize: "14px",
+                                                fontWeight: "400",
+                                                color: "rgb(255, 255, 255)"
+                                            }}
+                                        >
                                             {item.qualification}
                                         </Typography>
                                     </Box>

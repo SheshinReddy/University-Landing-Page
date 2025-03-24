@@ -12,6 +12,7 @@ import { Box } from "@mui/material"
 import Research from "../components/Research"
 import FacilitiesAndServices from "../components/FacilitiesAndServices"
 import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer"
 
 function LandingPage() {
     return (
@@ -28,6 +29,7 @@ function LandingPage() {
             <Research/>
             <FacilitiesAndServices/>
             <Testimonials/>
+            <Footer/>
             {/* <PopUp/> */}
         </Box>
     )
