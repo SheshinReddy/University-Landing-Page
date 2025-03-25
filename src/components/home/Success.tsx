@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material"
 import Grid from "@mui/material/Grid2"
-import BasicCustomButtonComponent from "./BasicCustomButtonComponent";
+import BasicCustomButtonComponent from "../common/BasicCustomButtonComponent";
 
 function Success() {
 

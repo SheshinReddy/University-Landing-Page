@@ -1,5 +1,5 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import { WhyUsCardProps } from "../interfaces/mainInterfaces";
+import { WhyUsCardProps } from "../../interfaces/mainInterfaces";
 
 function WhyUsCard({ stat, text }: WhyUsCardProps) {
     return (

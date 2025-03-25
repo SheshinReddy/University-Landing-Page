@@ -1,5 +1,5 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import { LifeAtAUCardProps } from "../interfaces/mainInterfaces";
+import { LifeAtAUCardProps } from "../../interfaces/mainInterfaces";
 
 function LifeAtAUCard ({ item }: { item: LifeAtAUCardProps }) {
     return (

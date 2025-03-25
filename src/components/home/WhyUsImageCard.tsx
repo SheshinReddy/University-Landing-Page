@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import { WhyUsImageCardProps } from "../interfaces/mainInterfaces";
+import { WhyUsImageCardProps } from "../../interfaces/mainInterfaces";
 
 function WhyUsImageCard({ imageSource, heading, content }: WhyUsImageCardProps) {
     return (

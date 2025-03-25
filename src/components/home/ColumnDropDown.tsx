@@ -1,5 +1,5 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import { dropDownItemProps } from "../interfaces/dropdown";
+import { dropDownItemProps } from "../../interfaces/dropdown";
 
 interface columnDropDownProps {
     item: dropDownItemProps;

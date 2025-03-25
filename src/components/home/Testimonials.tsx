@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import BasicCustomButtonComponent from "./BasicCustomButtonComponent";
+import BasicCustomButtonComponent from "../common/BasicCustomButtonComponent";
 import Slider from "react-slick";
 
 function Testimonials() {

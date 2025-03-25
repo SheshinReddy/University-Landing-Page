@@ -1,18 +1,18 @@
-import Header from "../components/Header";
-import JoinUsToday from "../components/JoinUsToday";
-import LifeAtAU from "../components/LifeAtAU";
-import WhyUs from "../components/WhyUs";
-import TheSchools from "../components/TheSchools";
+import JoinUsToday from "../components/home/JoinUsToday";
+import LifeAtAU from "../components/home/LifeAtAU";
+import WhyUs from "../components/home/WhyUs";
+import TheSchools from "../components/home/TheSchools";
 // import PopUp from "../components/PopUp";
-import RecognitionAndRenown from "../components/RecognitionAndRenown";
-import Collaborations from "../components/Collaborations"
-import Promise from "../components/Promise"
-import Success from "../components/Success"
+import RecognitionAndRenown from "../components/home/RecognitionAndRenown";
+import Collaborations from "../components/home/Collaborations"
+import Promise from "../components/home/Promise"
+import Success from "../components/home/Success"
 import { Box } from "@mui/material"
-import Research from "../components/Research"
-import FacilitiesAndServices from "../components/FacilitiesAndServices"
-import Testimonials from "../components/Testimonials";
-import Footer from "../components/Footer"
+import Research from "../components/home/Research"
+import FacilitiesAndServices from "../components/home/FacilitiesAndServices"
+import Testimonials from "../components/home/Testimonials";
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 
 function LandingPage() {
     return (

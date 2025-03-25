@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import TiltImage from "./TiltImage"
-import { lifeAtAUCardData } from "../data/mainData"
+import { lifeAtAUCardData } from "../../data/mainData"
 import LifeAtAUCard from "./LifeAtAUCard"
 
 function LifeAtAU() {

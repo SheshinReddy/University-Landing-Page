@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { whyUsCardsData } from "../data/mainData";
+import { whyUsCardsData } from "../../data/mainData";
 import WhyUsCard from "./WhyUsCard";
 import WhyUsCarousel from "./WhyUsCarousel";
 import "slick-carousel/slick/slick.css";

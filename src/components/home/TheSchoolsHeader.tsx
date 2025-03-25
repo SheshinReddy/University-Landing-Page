@@ -1,5 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
-import { theSchoolsHeader } from "../data/mainData";
+import { theSchoolsHeader } from "../../data/mainData";
 
 function TheSchoolsHeader() {
     return (

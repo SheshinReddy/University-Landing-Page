@@ -1,10 +1,10 @@
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
-import "../styles/Navbar.css"
-import { dropDownItemProps, dropDownTypes } from "../interfaces/dropdown";
-import RowDropDown from "./RowDropDown";
-import ColumnDropDown from "./ColumnDropDown";
-import { navBarItems } from "../data/navBarItems";
+import "../../styles/Navbar.css"
+import { navBarItems } from "../../data/navBarItems";
+import { dropDownItemProps, dropDownTypes } from "../../interfaces/dropdown";
+import ColumnDropDown from "../home/ColumnDropDown";
+import RowDropDown from "../home/RowDropDown";
 
 interface NavItemProps {
     item: dropDownItemProps;
