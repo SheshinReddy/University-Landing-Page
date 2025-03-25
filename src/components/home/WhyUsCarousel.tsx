@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { whyUsImageCards } from "../data/mainData";
+import { whyUsImageCards } from "../../data/mainData";
 import WhyUsImageCard from "./WhyUsImageCard";
 import Slider from "react-slick";
 

@@ -1,5 +1,5 @@
 import { Card, Typography } from "@mui/material";
-import { dropDownItemProps } from "../interfaces/dropdown";
+import { dropDownItemProps } from "../../interfaces/dropdown";
 
 function RowDropDown({ item }: { item: dropDownItemProps }) {
     return (

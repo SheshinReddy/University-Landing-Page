@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { TheSchoolCardStats, TheSchoolsCard } from "../interfaces/mainInterfaces";
+import { TheSchoolCardStats, TheSchoolsCard } from "../../interfaces/mainInterfaces";
 import { Box, Typography } from "@mui/material";
-import { theSchoolsCardsInfo } from "../data/mainData";
+import { theSchoolsCardsInfo } from "../../data/mainData";
 
 interface CompressedCardProp {
     schoolInfo: TheSchoolsCard
