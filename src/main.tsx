@@ -5,11 +5,16 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { RouterProvider  } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { homePageRouter } from "./routes/HomePageRoutes";
+import { ThemeProvider } from '@emotion/react';
+import { globalTheme } from './themes/globalTheme';
+import "@fontsource/urbanist/index.css"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router = {homePageRouter}/>
+    <ThemeProvider theme={globalTheme}>
+      <RouterProvider router={homePageRouter} />
+    </ThemeProvider>
   </StrictMode>,
 )
