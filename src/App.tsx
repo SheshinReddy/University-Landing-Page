@@ -1,12 +1,9 @@
-import './App.css'
-import LandingPage from './pages/LandingPage'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { RouterProvider } from "react-router-dom";
+import { homePageRouter } from "./routes/HomePageRoutes";
+import './index.css'
 
 function App() {
-  return (
-      <LandingPage />
-  )
+  return <RouterProvider router={homePageRouter} />;
 }
 
-export default App
+export default App;

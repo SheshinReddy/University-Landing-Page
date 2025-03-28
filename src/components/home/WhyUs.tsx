@@ -4,10 +4,13 @@ import WhyUsCard from "./WhyUsCard";
 import WhyUsCarousel from "./WhyUsCarousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useContext } from "react";
+import { UniversityContext } from "../../context/UniversityProvider";
 
 
 function WhyUs() {
     const theme = useTheme();
+    const { universityName } = useContext(UniversityContext) || { universityName: "Default University" };
     return (
         <Box
             className="why-us-container"
@@ -43,14 +46,14 @@ function WhyUs() {
                 fontWeight="bold"
             // fontSize="2rem"
             >
-                Anurag University
+                {universityName}
             </Typography>
             <Typography
                 sx={{
                     paddingTop: "1.5rem"
                 }}
             >
-                At Anurag University, we’re focused on creating industry-ready graduates who are more than ready to enter the workforce. Our innovative methodologies like a world-class finishing school and partnerships with core companies and research institutes help groom students to be self-sufficient individuals who are well-rounded in the truest sense. You walk out of Anurag, not just with a degree but with accomplishments and life skills to make the world a better place.
+                At {universityName}, we’re focused on creating industry-ready graduates who are more than ready to enter the workforce. Our innovative methodologies like a world-class finishing school and partnerships with core companies and research institutes help groom students to be self-sufficient individuals who are well-rounded in the truest sense. You walk out of Anurag, not just with a degree but with accomplishments and life skills to make the world a better place.
             </Typography>
             <Box
                 display="flex"
