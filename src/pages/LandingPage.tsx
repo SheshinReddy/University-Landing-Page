@@ -7,7 +7,7 @@ import RecognitionAndRenown from "../components/home/RecognitionAndRenown";
 import Collaborations from "../components/home/Collaborations"
 import Promise from "../components/home/Promise"
 import Success from "../components/home/Success"
-import { Box } from "@mui/material"
+import { Box, GlobalStyles } from "@mui/material"
 import Research from "../components/home/Research"
 import FacilitiesAndServices from "../components/home/FacilitiesAndServices"
 import Testimonials from "../components/home/Testimonials";
@@ -17,6 +17,7 @@ import Header from "../components/common/Header";
 function LandingPage() {
     return (
         <Box>
+            <GlobalStyles styles={{ body: {margin: "0", overflowX: "hidden"}}}/>
             <Header />
             <JoinUsToday />
             <WhyUs />

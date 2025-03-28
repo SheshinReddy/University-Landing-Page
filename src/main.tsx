@@ -5,16 +5,18 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { RouterProvider } from "react-router-dom";
-import { homePageRouter } from "./routes/HomePageRoutes";
 import { ThemeProvider } from '@emotion/react';
 import { globalTheme } from './themes/globalTheme';
 import "@fontsource/urbanist/index.css"
+import App from './App';
+import { UniversityProvider } from './context/UniversityContext';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider theme={globalTheme}>
-      <RouterProvider router={homePageRouter} />
-    </ThemeProvider>
+    <UniversityProvider>
+      <ThemeProvider theme={globalTheme}>
+        <App /> {/* Use App.tsx here */}
+      </ThemeProvider>
+    </UniversityProvider>
   </StrictMode>,
 )
